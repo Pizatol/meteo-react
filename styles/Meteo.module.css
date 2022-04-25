@@ -1,0 +1,61 @@
+.global_container {
+  width: 100%;
+  max-width: 700px;
+  height: 1000px;
+  border: 1px solid red;
+  margin: auto;
+  background-image: url(../public/assets/warm_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.global_container_cold {
+  background-image: url(../public/assets/cold_bg.jpg);
+  width: 100%;
+  max-width: 700px;
+  height: 1000px;
+  border: 1px solid red;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.search_bar {
+  text-align: center;
+}
+
+.search_bar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search_bar input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+  opacity: .8;
+  font-size: 20px;
+  padding: 15px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.search_bar input:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/*# sourceMappingURL=Meteo.module.css.map */
