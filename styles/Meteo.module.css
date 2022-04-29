@@ -1,61 +1,168 @@
 .global_container {
   width: 100%;
-  max-width: 700px;
-  height: 1000px;
-  border: 1px solid red;
-  margin: auto;
-  background-image: url(../public/assets/warm_bg.jpg);
+  max-width: 600px;
+  height: 800px;
+  margin: 50px auto;
+  background-image: url(../public/assets/warm2.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .global_container_cold {
-  background-image: url(../public/assets/cold_bg.jpg);
+  background-image: url(../public/assets/cold_bg2.jpg);
   width: 100%;
-  max-width: 700px;
-  height: 1000px;
-  border: 1px solid red;
-  margin: auto;
+  max-width: 600px;
+  height: 800px;
+  margin: 50px auto;
   background-size: cover;
   background-position: center;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.undefined_search_bg {
+  background-image: url(../public/assets/weather.jpg);
+  width: 100%;
+  max-width: 600px;
+  height: 800px;
+  margin: 50px auto;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.undefined_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.undefined_search h1 {
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #333;
+  font-size: 70px;
 }
 
 .search_bar {
   text-align: center;
 }
 
-.search_bar form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .search_bar input {
   width: 300px;
-  height: 40px;
+  height: 50px;
   outline: none;
   border: none;
-  opacity: .8;
+  border-radius: 5px;
+  margin-top: 30px;
   font-size: 20px;
   padding: 15px;
   color: #333;
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .search_bar input:focus {
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+.search_result {
+  -webkit-animation: 0.6s ease appear;
+          animation: 0.6s ease appear;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #333;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.location {
+  font-size: 70px;
+}
+
+.date {
+  font-size: 30px;
+}
+
+.weather_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+}
+
+.temp {
+  padding: 10px 20px 25px 20px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px #333;
+  background-color: rgba(241, 241, 241, 0.6);
+  -webkit-box-shadow: 2px 2px 5px #333;
+          box-shadow: 2px 2px 5px #333;
+  border-radius: 5px;
+}
+
+.weather {
+  margin-top: 30px;
+  font-size: 50px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px #333;
 }
 /*# sourceMappingURL=Meteo.module.css.map */
